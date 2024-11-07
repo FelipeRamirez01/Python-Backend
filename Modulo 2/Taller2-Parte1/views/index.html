@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Guarderia</title>
+</head>
+<body>
+    
+       {% for perro in perros: %}
+        <h1>Este es {{perro.nombre}}!</h1>
+        <h2>Es un hermoso {{perro.raza}}!</h2>
+        <p>Tiene una edad de {{perro.edad}} años y su peso es {{perro.peso}} kg</p>
+       {% endfor %}
+   
+</body>
+</html>

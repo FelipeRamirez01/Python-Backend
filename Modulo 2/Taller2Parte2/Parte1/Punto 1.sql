@@ -1,0 +1,1 @@
+SELECT * FROM tablas.perros where nombre = 'Lassie';

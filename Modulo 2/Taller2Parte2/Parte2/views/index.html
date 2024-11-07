@@ -1,0 +1,22 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Guardería de Perros</title>
+</head>
+<body>
+    <h1>Guardería de Perros</h1>
+    
+    <!-- Mostrar el número de perros llamados Lassie -->
+    <p>Hay {{ cantidad_lassie }} perros llamados Lassie.</p>
+    
+    <!-- Mostrar la lista de perros asignados a Mario -->
+    <h2>Perros de Mario</h2>
+    <ul>
+        {% for perro in perros_mario %}
+            <li>{{ perro.nombre }} - Raza: {{ perro.raza }} - Peso: {{ perro.peso }} kg</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
